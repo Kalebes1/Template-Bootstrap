@@ -1,1 +1,1 @@
-Template feito utilizando Bootstrap.
+Template totalmente responsivo utilizando Bootstrap.
