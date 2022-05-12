@@ -5,6 +5,8 @@
 body{
     background-color: #ccc;
 }
+
+/*HEADER*/
 .navbar ul li {
     font-weight: 600;
     margin-right: 15px;
@@ -16,10 +18,12 @@ body{
 .navbar-dark .navbar-nav .nav-link:hover {
     background-color: rgb(151, 148, 148);
 }
+
+/*MAIN*/
 .container{
     background-color: #FFF;
 }
-.background-1 {
+.background-img {
     height: 70vh;
     background-color: rgb(26, 24, 24);
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../media/background-1.jpg');
@@ -43,13 +47,11 @@ body{
 .content p{
     font-size: 13px;
 }
-.btn{
+.col-lg-4 .btn{
     display: block;
     margin: auto;
 }
-
-/* SECTION-3*/
-.background-3 h4{
+.background-content .content2 h4{
     text-align: center;
     margin-bottom: 30px;
 }
@@ -63,8 +65,9 @@ body{
     padding-right: 10px;
     font-size: 13px;
 }
-.background-3 button{
-   margin-left: 66.667%;
+.background-content .col-lg-6  button, .background-content .col-lg-3 button{
+    display: block;
+   margin-left: auto;
    border: 1px solid #000;
 }
 
@@ -73,7 +76,7 @@ body{
 
 
 @media (max-width:991px){
-    .background-2 .col-lg-4, .background-3 .col-lg-6{
+    .background-content .col-lg-4, .background-content .col-lg-6, .background-content .col-lg-3{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -89,17 +92,17 @@ body{
     .navbar-dark .navbar-nav .nav-item:hover{
         background-color: rgb(151, 148, 148);
     }
-    .background-2{
+    .background-content{
         margin: 0;
         padding: 0;
     }
 }
 @media (max-width:480px){
-    .background-2 .img-thumbnail, .content{
+    .background-content .img-thumbnail.first, .content, .content2.p-2{
         width: 100vw;
         max-width: calc(100vw - 50px);
     }
-    .background-3 .img-thumbnail, .content2{
+    .background-content .img-thumbnail, .content2{
         width: 100vw;
         max-width: 100vw;
     }
