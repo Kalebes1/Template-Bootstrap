@@ -33,6 +33,26 @@ body{
     color: #FFF;
     margin-bottom: 60px;
 }
+.background-img2{
+    height: 70vh;
+    background-color: rgb(26, 24, 24);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../../media/background-2.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #FFF;
+    margin-bottom: 60px;
+}
+.background-img3{
+    height: 100vh;
+    background-color: rgb(26, 24, 24);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../../media/background-3.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #FFF;
+    margin-bottom: 60px;
+}
 .text-center{
     height: 100%;
 }
@@ -65,18 +85,19 @@ body{
     padding-right: 10px;
     font-size: 13px;
 }
-.background-content .col-lg-6  button, .background-content .col-lg-3 button{
+.background-content .col-lg-6  button, .background-content .col-lg-3 button, .background-img3 form button{
     display: block;
-   margin-left: auto;
-   border: 1px solid #000;
+    margin-left: auto;
+    border: 1px solid #000;
+}
+.background-img3 form .row{
+    width: 800px;
 }
 
 
 
-
-
 @media (max-width:991px){
-    .background-content .col-lg-4, .background-content .col-lg-6, .background-content .col-lg-3{
+    .background-content .col-lg-4, .background-content .col-lg-6, .background-content .col-lg-3, .background-content .col-lg-12{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -96,8 +117,12 @@ body{
         margin: 0;
         padding: 0;
     }
+    .background-img3 form .row{
+        width: auto;
+        max-width: 600px;
+    }
 }
-@media (max-width:480px){
+@media (max-width:550px){
     .background-content .img-thumbnail.first, .content, .content2.p-2{
         width: 100vw;
         max-width: calc(100vw - 50px);
