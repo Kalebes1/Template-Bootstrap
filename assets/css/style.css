@@ -24,7 +24,7 @@ body{
     background-color: #FFF;
 }
 .background-img {
-    height: 70vh;
+    height: 500px;
     background-color: rgb(26, 24, 24);
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../media/background-1.jpg');
     background-size: cover;
@@ -34,7 +34,7 @@ body{
     margin-bottom: 60px;
 }
 .background-img2{
-    height: 70vh;
+    height: 500px;
     background-color: rgb(26, 24, 24);
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../../media/background-2.jpg');
     background-size: cover;
@@ -44,7 +44,7 @@ body{
     margin-bottom: 60px;
 }
 .background-img3{
-    height: 100vh;
+    height: 100%;
     background-color: rgb(26, 24, 24);
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../../media/background-3.jpg');
     background-size: cover;
@@ -85,7 +85,7 @@ body{
     padding-right: 10px;
     font-size: 13px;
 }
-.background-content .col-lg-6  button, .background-content .col-lg-3 button, .background-img3 form button{
+.background-content .col-lg-6  button, .background-content .col-lg-3 button, .background-img3 form button   {
     display: block;
     margin-left: auto;
     border: 1px solid #000;
@@ -97,6 +97,9 @@ body{
 
 
 @media (max-width:991px){
+    .text-center h3{
+        font-size: 50px;
+    }
     .background-content .col-lg-4, .background-content .col-lg-6, .background-content .col-lg-3, .background-content .col-lg-12{
         display: flex;
         justify-content: center;
@@ -123,6 +126,12 @@ body{
     }
 }
 @media (max-width:550px){
+    .background-img, .background-img2{
+        height: 50vh;
+    }
+    .text-center h3{
+        font-size: 30px;
+    }
     .background-content .img-thumbnail.first, .content, .content2.p-2{
         width: 100vw;
         max-width: calc(100vw - 50px);
